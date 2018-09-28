@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<block>
+  <name>Polyphonic Synthesizer</name>
+  <key>obrot_polyphonic_synthesizer</key>
+  <category>[obrot]</category>
+  <import>import obrot</import>
+  <make>obrot.polyphonic_synthesizer($samp_rate, $start_octave, $end_octave)</make>
+
+  <param>
+    <name>Samp Rate (Sps)</name>
+    <key>samp_rate</key>
+    <value>samp_rate</value>
+    <type>real</type>
+  </param>
+  <param>
+    <name>Start Octave</name>
+    <key>start_octave</key>
+    <value>4</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>End Octave</name>
+    <key>end_octave</key>
+    <value>4</value>
+    <type>int</type>
+  </param>
+
+  <sink>
+    <name>in</name>
+    <type>message</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
